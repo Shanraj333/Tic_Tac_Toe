@@ -1,0 +1,105 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #2188b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Main Wrapper */
+.main-body {
+    text-align: center;
+}
+
+/* Game Title */
+h1 {
+    margin-bottom: 20px;
+    color: #222020;
+}
+
+/* Container for the Game */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Grid Layout for Boxes */
+.body-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+}
+
+/* Each Box (Game Cell) */
+.box {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 2px solid #444;
+    background-color: white;
+    color: #222;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.box:disabled {
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+/* Restart Button */
+.reset {
+    grid-column: span 3;
+    margin-top: 20px;
+}
+
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Winner Message */
+.msg-container {
+   position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #28a745;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+#msg {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: green;
+
+}
+
+/* Hide Message by Default */
+.hide {
+    display: none;
+}
