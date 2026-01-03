@@ -26,3 +26,14 @@ This project demonstrates core JavaScript logic, DOM manipulation, and event han
 
 ## 📂 Project Structure
 
+
+👤 Author
+
+Shan Raj C
+Final-year B.Tech CSE Student
+
+📧 Email: shanrajc72@gmail.com
+
+🔗 GitHub: https://github.com/Shanraj333
+
+🔗 LinkedIn: https://www.linkedin.com/in/shanraj-c-57a935351/
